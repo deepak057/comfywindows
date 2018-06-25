@@ -1,0 +1,128 @@
+/* ----------------------------------------------------------------
+   Knowledge base LESS
+-----------------------------------------------------------------*/
+@import (reference) "../../../../themes/buddyapp/assets/less/themes/default/variables.less";
+@import (reference) "../../../../themes/buddyapp/assets/less/themes/default/mixins.less";
+/* Structure */
+.kb_section {
+    margin-bottom:15px;
+}
+h4.kb-section-name {
+    margin: 0;
+    padding: 10px 5px;
+    i {
+        .transition(color .3s ease-out);
+    }
+}
+h4.kb-section-name>i.icon {
+    padding-right: 10px;
+}
+ul.kb-wall-list {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+ul.kb-wall-list>li {
+    padding:3px 0;
+}
+li.kb-section-name>i.icon, li.kb-article-name>i.icon, li.kb-view-more>i.icon {
+    padding:0 5px;
+}
+/* buttons */
+.sq_frontedit_action:not(.save) {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0 20px 0 40px;
+    height: 100%;
+    /* advanced */
+    &:before {
+        content: '\e8bf';
+        .icomoon();
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        font-weight: 400;
+        .transition(color .3s ease-out);
+    }
+    /* edit */
+    &.sq_frontend_edit_action {
+        &:before {
+            content: '\e90b';
+            top: 2px;
+        }
+    }
+    /* history */
+    &.sq_frontend_revisions_action {
+        &:before {
+            content: '\e645';
+            top: 0;
+            font-size: 16px;
+        }
+    }
+}
+ul.sq_frontedit_actions {
+    list-style: none;
+    clear:both;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    li {
+        float: left;
+    }
+}
+.sq_frontedit {
+    width: 100%;
+    padding: 20px;
+    input[name="sq_frontedit_title"] {
+        width: 100%;
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+    h4 {
+        position: relative;
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        font-size: 0.750rem;
+        margin: 5px 0 15px 0;
+        letter-spacing: 0;
+    }
+    .wp-editor-area {
+        max-height: 150px;
+    }
+    form {
+        margin-bottom: 0px;
+        > .row {
+            &:first-child {
+                > div {
+                    h4 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    button {
+        margin-bottom: 0;
+    }
+}
+ul.kb-archive-listing, ul.sq_frontedit_post_revisions {
+    list-style: none;
+}
+ul.kb-archive-listing li {
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 60px;
+    }
+}
+ul.kb-archive-listing h2 {
+    margin-bottom: 5px;
+}
+ul.kb-archive-listing p {
+    margin-top: 0;
+}
