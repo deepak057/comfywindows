@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_COOKIE['PHPSESSID'])) {
+if(isset($_COOKIE['CWUserLoggedIn'])) {
 
 
 	header('Location:http://social.comfywindows.com');

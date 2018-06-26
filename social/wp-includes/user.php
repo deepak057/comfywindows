@@ -3456,6 +3456,27 @@ function wp_get_user_request_data( $request_id ) {
 	return new WP_User_Request( $post );
 }
 
+
+/**
+Custom hooks for login and logout
+Sets and unsets a cross domain cookie 
+Used by the landing/index.php to automatically redirect to social site
+**/
+
+function create_login_cookie( $user_login, $user ) {
+       setcookie("CWUserLoggedIn","true",time()+3600*24,"/",".comfywindows.com");
+}
+add_action('wp_login', 'create_login_cookie', 10, 2);
+
+function erase_login_cookie(){
+	
+	unset($_COOKIE['CWUserLoggedIn']);
+	setcookie('CWUserLoggedIn', null, -1, '/', ".comfywindows.com");
+	
+}
+
+add_action('wp_logout', 'erase_login_cookie');
+
 /**
  * WP_User_Request class.
  *
