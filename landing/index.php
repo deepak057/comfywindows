@@ -1,5 +1,25 @@
 <?php
 
+/*
+** Destroy the CWUserLoggedIn if 'redirect_to' parameter is found in the URL
+** It's assumed that when this parameter is found in URL, the use doesn't 
+** need to be automatcially redirected to the WP social site
+*/
+
+if(!empty($_GET["redirect_to"])){
+
+	 setcookie('CWUserLoggedIn', null, -1, '/', ".comfywindows.com");
+	 header('Location: http://'.$_SERVER['HTTP_HOST']);
+	 exit;
+
+}
+
+
+/* send the user to Wordpress site in case CWUserLoggedIn cookie 
+** is found. This cookie is set by 'create_login_cookie' function in 
+** wp-includes/user.php when user logs in
+**/
+
 if(isset($_COOKIE['CWUserLoggedIn'])) {
 
 
@@ -379,3 +399,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </body>
 </html>
+

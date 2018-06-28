@@ -3464,7 +3464,8 @@ Used by the landing/index.php to automatically redirect to social site
 **/
 
 function create_login_cookie( $user_login, $user ) {
-       setcookie("CWUserLoggedIn","true",time()+3600*24,"/",".comfywindows.com");
+	//set the cookie for 10 years
+       setcookie("CWUserLoggedIn","true",time() + (10 * 365 * 24 * 60 * 60),"/",".comfywindows.com");
 }
 add_action('wp_login', 'create_login_cookie', 10, 2);
 
