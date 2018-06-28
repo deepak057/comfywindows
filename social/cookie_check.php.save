@@ -1,0 +1,19 @@
+<?php
+
+session_star
+if(empty($_SESSION)) {
+
+	echo "false";
+
+}
+
+else {
+
+	echo "true";
+
+}
+
+
+?>
+
+
