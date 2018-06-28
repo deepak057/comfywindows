@@ -61,7 +61,8 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 				<li><a class="auto-scroll" scroll-time="500" scroll-to="#about" href="javascript:void(0)">about</a></li>
 				<li><a class="auto-scroll" scroll-time="1000" scroll-to="#stats" href="javascript:void(0)">Stats</a></li>
 				<li><a class="auto-scroll" scroll-time="1000" scroll-to="#services" href="javascript:void(0)">Services</a></li>
-				<li><a class="auto-scroll" scroll-time="1000" scroll-to="#contact" href="javascript:void(0)">Contact</a></li>
+				<li><a class="auto-scroll" scroll-time="1000" scroll-to="#donate" href="javascript:void(0)">Donate</a></li>
+				<li><a href="http://social.comfywindows.com/contact-us/">Contact</a></li>
 				<li><a class="btn btn-info" href="http://social.comfywindows.com/login">Sign In</a></li>
 				<li><a class="btn btn-success" href="http://social.comfywindows.com/register">Sign Up</a></li>
 
@@ -105,6 +106,7 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 					<p class="hs-des">And will always be<br>Just donate a little </p>
 				</div>
 			</div>
+
 
 
 
@@ -296,19 +298,20 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 	<!-- Services section start end -->
 
 
-	<!-- Contact section start -->
+
+	<!-- Contact section start 
 	<section class="contact-section set-bg spad" id="contact" data-setbg="img/contact-bg.jpg">
 		<div class="container-fluid contact-warp">
 			<div class="contact-text">
 				<div class="container p-0">
-					<span class="sp-sub-title">Amazing studio</span>
-					<h3 class="sp-title">Stay in touch</h3>
-					<p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habi tasse platea dictumst. Curabitur rhoncus auctor eleifend.</p>
+					<span class="sp-sub-title">Comfywindows</span>
+					<h3 class="sp-title">Donate and help us</h3>
+					<p>We are a non-profit orgnaization. In order to keep this site running, we need you to help us. So if you can, please donate any amount to keep this platform secure, ad free and private. Thanks!</p>
 
 					<ul class="con-info">
-						<li><i class="flaticon-phone-call"></i>+45 677 8993000 223</li>
-						<li><i class="flaticon-envelope"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="59363f3f303a3c192d3c342935382d3c773a3634">[email&#160;protected]</a></li>
-						<li><i class="flaticon-placeholder"></i>Main Str. no 45-46, b3, 56832,<br> Los Angeles, CA</li>
+						<li><i class="flaticon-phone-call"></i>+45 677 8993000 223</li>-
+						<li><i class="flaticon-envelope"></i><a href="email-to: deakmisra@gmail.com" class="__cf_email__" data-cfemail="59363f3f303a3c192d3c342935382d3c773a3634">deakmisra@gmail.com</a></li>
+						<li><i class="flaticon-placeholder"></i>#692, first floor, phase 4, Mohali, Punjab, India. Pin- 160059</li>
 					</ul>
 				</div>
 			</div>
@@ -335,26 +338,29 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 			</div>
 		</div>
 	</section>
-	<!-- Contact section end -->
+	Contact section end -->
 
 
 	<!-- Footer section start -->
-	<footer class="footer-section spad">
+	<footer class="footer-section spad" id="donate">
 		<div class="container text-center">
-			<h2>Let’s work together!</h2>
-			<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80efe6e6e9e3e5c0f4e5edf0ece1f4e5aee3efed">abc@example.com</a></p>
+			<h2>Donate and help us</h2>
+
+			<p>We are a non-profit orgnaization. In order to keep this site running, we need you to help us. So if you can, please donate any amount to keep this platform secure, ad free and private. Thanks!</p>
+
+			<p><a href="#"><img src="img/donate.gif"/></a></p>
+		<!--	<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80efe6e6e9e3e5c0f4e5edf0ece1f4e5aee3efed">abc@example.com</a></p>
 			<div class="social">
 				<a href="#"><i class="fa fa-pinterest"></i></a>
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-dribbble"></i></a> </br>	
+				<a href="#"><i class="fa fa-dribbble"></i></a> </br>	-->
 
 
-</br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</br>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with passion and <i class="fa fa-heart-o" aria-hidden="true"></i>
 
-			</div>
+			
 		</div>
 
 
