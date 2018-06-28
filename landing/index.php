@@ -33,8 +33,8 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>ComfyWindows- Private, free and ad free social network</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="HALO photography portfolio template">
-	<meta name="keywords" content="photography, portfolio, onepage, creative, html">
+	<meta name="description" content="COMFYWINDOWS, A private, free and ad free social network">
+	<meta name="keywords" content="social network, ad free social network, free social network, new social network">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="https://colorlib.com/preview/theme/halo/img/favicon.ico" rel="shortcut icon">
@@ -68,16 +68,16 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 	<!-- Header section start -->
 	<header class="header-section sp-pad">
 		<h3 class="site-logo">ComfyWindows</h3>
-		<form class="search-top">
+		<!--<form class="search-top" method="get" action="http://social.comfywindows.com/members">
 			<button class="se-btn"><i class="fa fa-search"></i></button>
-			<input type="text" placeholder="Search.....">
-		</form>
+			<input type="text" placeholder="Search....." name="s">
+		</form>-->
 		<div class="nav-switch">
 			<i class="fa fa-bars"></i>
 		</div>
 		<nav class="main-menu">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a class="auto-scroll" scroll-time="500" scroll-to="#about" href="javascript:void(0)">about</a></li>
 				<li><a class="auto-scroll" scroll-time="1000" scroll-to="#stats" href="javascript:void(0)">Stats</a></li>
 				<li><a class="auto-scroll" scroll-time="1000" scroll-to="#services" href="javascript:void(0)">Services</a></li>
