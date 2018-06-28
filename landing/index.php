@@ -368,7 +368,7 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 
 			<p>We are a non-profit orgnaization. In order to keep this site running, we need you to help us. So if you can, please donate any amount to keep this platform secure, ad free and private. Thanks!</p>
 
-			<p><a href="#"><img src="img/donate.gif"/></a></p>
+			<p><a href="http://social.comfywindows.com/donate/"><img src="img/donate.gif"/></a></p>
 		<!--	<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80efe6e6e9e3e5c0f4e5edf0ece1f4e5aee3efed">abc@example.com</a></p>
 			<div class="social">
 				<a href="#"><i class="fa fa-pinterest"></i></a>
