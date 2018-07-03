@@ -13,6 +13,8 @@
 	<ul>
 		<?php if ( bp_is_my_profile() ) bp_get_options_nav(); ?>
 
+		<?php do_action( 'bp_groups_directory_group_filter' ); ?>
+
 		<?php if ( !bp_is_current_action( 'invites' ) ) : ?>
 
 			<li id="groups-order-select" class="last filter">

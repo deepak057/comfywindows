@@ -95,32 +95,32 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 	<!-- Hero section start -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/1.jpg">
+			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/1.png">
 				<div class="hs-text">
 					<h2 class="hs-title">Ad free</h2>
 					<p class="hs-des">A simple social network <br>That doesn’t sell your data</p>
 				</div>
 			</div>
-			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/2.jpg">
+			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/2.png">
 				<div class="hs-text">
 					<h2 class="hs-title">Private</h2>
 					<p class="hs-des">We don't analyze or<br> Monitor your activities</p>
 				</div>
 			</div>
-			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/1.jpg">
+			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/3.png">
 				<div class="hs-text">
 					<h2 class="hs-title">Non Profit</h2>
 					<p class="hs-des">We don't run ads<br> We rely on donations</p>
 				</div>
 			</div>
-			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/2.jpg">
+			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/4.png">
 				<div class="hs-text">
 					<h2 class="hs-title">Promise</h2>
 					<p class="hs-des">Unlike Facebook, we will<br> Never end up selling your data</p>
 				</div>
 			</div>
 
-			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/2.jpg">
+			<div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/5.png">
 				<div class="hs-text">
 					<h2 class="hs-title">It's free</h2>
 					<p class="hs-des">And will always be<br>Just donate a little </p>
@@ -147,78 +147,13 @@ if(isset($_COOKIE['CWUserLoggedIn'])) {
 				</div>
 				<div class="col-xl-7 offset-xl-1">
 					<figure class="intro-img mt-5 mt-xl-0">
-						<img src="img/intro.jpg" alt="">
+						<img src="img/intro.png" alt="">
 					</figure>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- Intro section end -->
-
-
-	<!-- Portfolio section start -->
-	<section class="portfolio-section">
-		<div class="portfolio-warp">
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/1.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/1.jpg"></div>
-					<h5>Summer in the desert</h5>
-					<p>Landscape Photography</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/2.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/2.jpg"></div>
-					<h5>Summer in the desert</h5>
-					<p>Landscape Photography</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/3.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/3.jpg"></div>
-					<h5>Summer in the desert</h5>
-					<p>Landscape Photography</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio sm-wide set-bg" data-setbg="img/portfolio/4.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/4.jpg"></div>
-					<h5>Summer in the desert</h5>
-					<p>Landscape Photography</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio sm-wide set-bg " data-setbg="img/portfolio/5.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/5.jpg"></div>
-					<h5>Summer in the desert</h5>
-					<p>Landscape Photography</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/6.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/6.jpg"></div>
-					<h5>Summer in the desert</h5>
-					<p>Landscape Photography</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio sm-wide md-w-100 set-bg " data-setbg="img/portfolio/7.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/7.jpg"></div>
-					<h5>Summer in the desert</h5>
-					<p>Landscape Photography</p>
-				</a>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-	</section>
-	<!-- Portfolio section end -->
 
 
 	<!-- Milestones section start -->
