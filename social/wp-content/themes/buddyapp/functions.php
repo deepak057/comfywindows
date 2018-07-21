@@ -1328,3 +1328,53 @@ function add_footer_widgets_columns() {
 }
 
 add_action( 'kleo_after_content', 'add_footer_widgets_columns', 20 );
+
+/**
+** Custome Code-
+** To set user's Profile visibility to "friends" by default
+**/
+add_action( 'user_register', 'add_user_meta_fields');
+
+function add_user_meta_fields( $user_id ) {
+
+ 	add_user_meta($user_id, SBPP04_PRIVACY_SETTING_KEY, SBPP04_VIEW_FRIENDS);
+
+ }
+
+/*
+add_action( 'bp_activity_add', 'bp_plugin_something_hook_activity_add', 10, 1 );
+
+function bp_plugin_something_hook_activity_add( $args ) {
+
+    $exclude = array( 'new_avatar', 'updated_profile' );
+
+    if(in_array($args['type'], $exclude)){
+
+    	bp_activity_update_meta( $args['id'], 'activity-privacy', 'friends' );
+
+    }
+        
+ 
+}
+*/
+
+function buddydev_friends_only_activity_args( $args ) {
+    
+    if( ! bp_is_activity_directory() || !  is_user_logged_in() ) {
+        return $args;
+    }
+    
+    $user_id = get_current_user_id();
+    
+    $user_ids = friends_get_friend_user_ids( $user_id );
+    
+    //include users own too?
+    array_push( $user_ids, $user_id );
+    
+    $args['user_id'] = $user_ids;
+    
+    //print_r($args);
+    return $args;
+ 
+}
+add_filter( 'bp_after_has_activities_parse_args', 'buddydev_friends_only_activity_args' );

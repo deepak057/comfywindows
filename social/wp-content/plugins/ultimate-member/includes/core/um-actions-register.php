@@ -1,4 +1,4 @@
-<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+﻿<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
 /**
@@ -450,6 +450,18 @@ function um_submit_form_register( $args ) {
 	return $user_id;
 }
 add_action( 'um_submit_form_register', 'um_submit_form_register', 10 );
+
+/**
+** Custome Code-
+** To set user's Profile visibility to "friends" by default
+**/
+add_action( 'um_post_registration', 'add_meta_fields', 10, 2 );
+
+ function add_meta_fields( $user_id, $args ) {echo “hi”;exit;
+
+ 	add_user_meta( $user_id, SBPP04_PRIVACY_SETTING_KEY, SBPP04_VIEW_FRIENDS);
+
+ }
 
 
 /**
